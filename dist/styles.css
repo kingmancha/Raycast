@@ -1,0 +1,188 @@
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #05010D;
+  transition: background-color 0.5s ease;
+  z-index: 1;
+}
+.header__container {
+  padding: 8px 36px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.header__logo {
+  max-width: 100px;
+  margin: 5px;
+  transition: opacity 0.5s ease;
+}
+.header__links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: center;
+}
+.header__buttons {
+  display: flex;
+  gap: 10px;
+}
+.header .header__link_button {
+  color: white;
+  text-decoration: none;
+}
+.header .header__link_button:hover {
+  opacity: 0.8;
+}
+
+.button--secondary {
+  color: #FFFFFF;
+  padding: 8px 12px;
+  border: none;
+  font-size: 14px;
+  border: none;
+  text-decoration: none;
+}
+.button--dark {
+  background-color: rgba(128, 128, 128, 0.5);
+  color: #FFFFFF;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+.button--dark:hover {
+  opacity: 1;
+}
+
+.intro {
+  margin-top: 80px;
+  display: flex;
+  color: #FFFFFF;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__valor {
+  justify-content: center;
+  font-size: 36px;
+}
+.intro__valor_parag {
+  margin-top: 10px;
+}
+
+.valores {
+  background-color: #110E19;
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.valores .valores_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.valores .valores_list_item {
+  background-color: #1A1623;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 calc(25% - 20px);
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+}
+.valores .valores_list_item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.valores .valores_list_item .text-big {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.valores .valores_list_item strong {
+  display: block;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.valores .valores_list_item h3 {
+  font-size: 16px;
+  margin: 20px 0 10px;
+}
+.valores .valores_list_item p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.valores .valores_list_item button {
+  background-color: rgba(128, 128, 128, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.valores .valores_list_item button:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.faq__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #FFFFFF;
+}
+.faq__item {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+.faq__item .faq__question {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+.faq__item .faq__question:hover {
+  text-decoration: underline;
+}
+.faq__item .faq__answer {
+  display: none;
+  font-size: 1rem;
+  color: #FFFFFF;
+  margin-top: 0.5rem;
+}
+
+.faq__item.active .faq__answer {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", system-ui;
+}
+
+body {
+  background-color: #05010D;
+}
+
+/*# sourceMappingURL=styles.css.map */

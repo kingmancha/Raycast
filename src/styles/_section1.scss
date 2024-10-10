@@ -1,0 +1,21 @@
+@import 'variavies';
+
+.intro {
+    margin-top: 80px;
+    display: flex;
+    color: $corDeTexto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    
+    &__valor {
+        justify-content: center;
+        font-size: 36px;
+        
+    }
+
+    &__valor_parag {
+        margin-top: 10px;
+    }
+}

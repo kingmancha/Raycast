@@ -1,0 +1,80 @@
+@import 'variavies';
+
+
+.header {
+    display: flex;
+    width: 100%;
+    background-color: $corPrimaria;
+    transition: background-color .5s ease;
+    z-index: 1;
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        }
+
+        &__logo {
+            max-width: 100px;
+            margin: 5px;
+            transition: opacity .5s ease;
+        }
+
+        &__links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        &__buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header__link_button {
+            color: white;  
+            text-decoration: none; 
+        }
+        
+        .header__link_button:hover {
+            opacity: 0.8;  
+        }
+    }
+
+    .button {
+
+        &--secondary {
+            color: $corDeTexto;
+            padding: 8px 12px;
+            border: none;
+            font-size: 14px;
+            border: none;
+            text-decoration: none;
+        }
+    
+        &--dark {
+            background-color: $corDoBotao;
+            color: $corDeTexto;
+            padding: 8px 12px;
+            font-size: 14px;
+            border-radius: 10px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+            text-decoration: none;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+
+
+
+    
